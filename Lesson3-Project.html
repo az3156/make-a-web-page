@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Stage 1 Project</title>
+</head>
+<body>
+	<h1>Tony's Stage 0/1 Notes</h1>
+	<div class="main-section">
+		<h2>Lesson 1</h2>
+		<div class="sub-section">
+		  <b>HTML and the Internet</b>
+		  <p>
+		  	HTML<em>(Hyper Text Markup Language)</em>is the language computers use in Web browsers to display content over the Internet.
+		  </p>
+		  <b>Elements</b>
+			<p>
+			  There are two kinds of elements:<em>inline</em>and<em>block.</em> 
+			</p>
+			<p>
+			  Inline elements will display text on the same line unless wrapping to the next or using a break tag.
+			</p>
+			<p>
+			  When multiple spaces or line breaks are visible in the HTML editor, they won't be visble on the web page using inline elements.  This white space is treated as a single space.<em>Block</em>elements will contain text inside an invisible box.
+			</p>
+		  <b>Tags</b>
+			<p>
+			  Tags inform the web browser how to display the contents inside of the tags.
+			</p>
+			<p>
+			  The content can consist of text, image, or a URL.
+			</p>
+			<p>
+			  Most elements require a start and an end tag.  These are formatted with a letter or letters inside of the left &lt; and right &gt; arrow symbols.  Some tags require an attribute and associated parameter in order for the tag to fully function.
+			</p>
+			<p>
+			  Inline examples: b=bold, em=emphasis/italics, a=anchor, span, strong<br>
+			  Note:  br=line break is an inline void element, which does not require an end tag.<br>
+			  Block tag examples:  p=paragraph, div, form
+			</p>
+		</div>
+	</div>
+    <div class="main-section">
+		<h2>Lesson 2</h2>
+		<div class="sub-section">
+		  <b>Structure</b>
+		  <p>
+		  	Web pages are built with a<em>rectangular</em>structure that consists of<em>boxes.</em>Boxes contain varying elements such as text or images and can vary in size and formatting.
+		  </p>
+		  <p>
+		  	HTML provides the structure for a web page, while CSS provides the style for how it looks.
+		  </p>
+		   	<b>Visualization</b>
+		  <p>
+		  	When viewing a graphical design for a web page, it helps to divide it into boxes that separate the content and structure for the page.  Start the process by dividing it into large boxes and work down to small boxes.
+		  </p>
+		  <p>
+		  	Visualize the structure like a tree that begins with a trunk or large section down to smaller branches.  The larger branches contain main elements that group related content together in the larger boxes.
+		</div>
+    </div>
+	<div class="main-section">
+		<h2>Lesson 3</h2>
+		<div class="sub-section">
+		    <b>Coding</b>
+		  <p>
+		  	The style coding should avoid repetition since it will reduce the chance of making errors and make for a cleaner document.  
+		  </p>
+		  <p>
+		  	It's important to lay the code out in a nested or tree like manner.  It greatly aids the programmer to structure the page properly and identify mistakes more easily.
+		  </p>
+		  	<b>Adding Style to HTML</b>
+		  <p>
+		  	CSS<em>(Cascading Style Sheet)</em>is an effective way to add style to an HTML file.  It controls how the objects are displayed on the screen using an Internet browser. The document type should be defined in the HTML file to specify the overall rules for the style elements.  Defining the HTML document type as HTML5 applies explicit rules to the file that allow the style to manipulate the display.  It can be defined at the beginning of the HTML file as follows:<br>
+		  	!DOCTYPE html<br>
+			&lt;html&gt;<br>
+			(HTML content)<br>
+			&lt;/html&gt;<br>
+		  </p>
+		  	<b>Methods for adding Style</b>
+		  <p>
+		  	Style can be added to the HTML file inline, in its own section inside the HTML file or in a separate CSS file that can be linked to the HTML document.  It's preferable to use a separate CSS file for adding style to HTML to keep the coding simpler and especially for larger, more complex files.  Style elements can apply to larger sections and down to small selections.  Linking CSS is done in the head tag section using the following example: <br>
+		  	&lt;link rel="stylesheet" type="text/css" href="style.css"&gt;<br>
+ 			Here's an example of adding style inline: <br>
+ 			&lt;div style="color: red"&gt;<br>
+ 		  </p>
+ 		  <p>
+ 		  	CSS files contain references to the HTML elements in which they apply style.  These references are followed by properties and values inside of curly brackets that define the style for that particular element.  For example, if you want to change the font or font color of the h1 element, it would look like this:<br>
+ 		  	h1 {<br>
+ 		  	  color: red;<br>
+ 		  	}
+ 		  </p>
+ 		  	<b>Boxes</b>
+ 		  <p>
+ 		  	The boxes that contain an element can be manipulated in the CSS style file. The box size and layout on the screen can be changed by adding properties in the CSS file. 
+ 		  </p>
+ 		  <p>
+ 		  	The div element is a block tag.  However, it can be changed to appear inline by adding the flex value to its display property.  This allows the div elements to appear on screen side-by-side as follows:<br>
+			&lt;div class="app" style="display: flex;&gt;
+		  </p>
+		  <p>
+		  	The values for box sizing can be done by defining the pixel width or heighth. However to properly adjust when the browser screen adjusts, the values can be defined by percentages in addition to maximum pixels. Example:<br>
+			width: 50%;<br>
+			height: 50%;<br>
+			max-width: 705px;
+		  </p>
+		</div>
+	</div>
+
+<p>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+    </a>
+</p>
+
+</body>
+</html>

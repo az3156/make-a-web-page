@@ -1,0 +1,30 @@
+
+* {
+  	margin: 10px;
+	font-family: Century Gothic;
+}
+
+.main-section {
+	text-align: center;
+	background-color: #008080;
+	color: #FFFFF0;
+	font-size: 20px;
+  	border-radius: 15px;
+  	padding: 10px;
+  	margin: 10px auto;
+}
+
+.sub-section {
+	text-align: left;
+	border-radius: 15px;
+	background-color: #90EE90;
+  	padding: 4px;
+	margin: 10px auto;
+	color: black;
+	opacity: 0.8;
+}
+
+.minor-section {
+	text-align: left;
+}
+
